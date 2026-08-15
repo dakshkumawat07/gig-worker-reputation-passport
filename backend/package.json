@@ -1,0 +1,19 @@
+{
+  "name": "gig-worker-reputation-passport-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hackathon P0 backend for creating and verifying signed gig-worker reputation passports.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "check": "node --check src/app.js && node --check src/server.js && node --check src/passportCrypto.js && node --check src/passportService.js && node --check src/passportController.js && node --check src/storage.js && node --check src/validation.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
